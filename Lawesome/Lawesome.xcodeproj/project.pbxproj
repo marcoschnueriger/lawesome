@@ -24,6 +24,7 @@
 		91B318EE16392EC60054B17F /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B318EC16392EC60054B17F /* MasterViewController_iPad.xib */; };
 		91B318F116392EC60054B17F /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B318EF16392EC60054B17F /* DetailViewController_iPhone.xib */; };
 		91B318F416392EC60054B17F /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B318F216392EC60054B17F /* DetailViewController_iPad.xib */; };
+		91B318FC16392FC30054B17F /* FetchWebData.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B318FB16392FC30054B17F /* FetchWebData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		91B318ED16392EC60054B17F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		91B318F016392EC60054B17F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		91B318F316392EC60054B17F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		91B318FA16392FC30054B17F /* FetchWebData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchWebData.h; sourceTree = "<group>"; };
+		91B318FB16392FC30054B17F /* FetchWebData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchWebData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				91B318EF16392EC60054B17F /* DetailViewController_iPhone.xib */,
 				91B318F216392EC60054B17F /* DetailViewController_iPad.xib */,
 				91B318E016392EC60054B17F /* Lawesome.xcdatamodeld */,
+				91B318FA16392FC30054B17F /* FetchWebData.h */,
+				91B318FB16392FC30054B17F /* FetchWebData.m */,
 				91B318CF16392EC60054B17F /* Supporting Files */,
 			);
 			path = Lawesome;
@@ -202,6 +207,7 @@
 				91B318E216392EC60054B17F /* Lawesome.xcdatamodeld in Sources */,
 				91B318E516392EC60054B17F /* MasterViewController.m in Sources */,
 				91B318E816392EC60054B17F /* DetailViewController.m in Sources */,
+				91B318FC16392FC30054B17F /* FetchWebData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
