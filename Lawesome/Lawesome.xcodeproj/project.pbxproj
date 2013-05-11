@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916749F3163965C0006384DE /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749DB163965C0006384DE /* NSObject+SBJson.m */; };
+		916749F4163965C0006384DE /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749DE163965C0006384DE /* SBJsonParser.m */; };
+		916749F5163965C0006384DE /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749E0163965C0006384DE /* SBJsonStreamParser.m */; };
+		916749F6163965C0006384DE /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749E2163965C0006384DE /* SBJsonStreamParserAccumulator.m */; };
+		916749F7163965C0006384DE /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749E4163965C0006384DE /* SBJsonStreamParserAdapter.m */; };
+		916749F8163965C0006384DE /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749E6163965C0006384DE /* SBJsonStreamParserState.m */; };
+		916749F9163965C0006384DE /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749E8163965C0006384DE /* SBJsonStreamWriter.m */; };
+		916749FA163965C0006384DE /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749EA163965C0006384DE /* SBJsonStreamWriterAccumulator.m */; };
+		916749FB163965C0006384DE /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749EC163965C0006384DE /* SBJsonStreamWriterState.m */; };
+		916749FC163965C0006384DE /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749EE163965C0006384DE /* SBJsonTokeniser.m */; };
+		916749FD163965C0006384DE /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749F0163965C0006384DE /* SBJsonUTF8Stream.m */; };
+		916749FE163965C0006384DE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 916749F2163965C0006384DE /* SBJsonWriter.m */; };
+		91674A1B163FD460006384DE /* HomeScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 91674A1A163FD460006384DE /* HomeScreen.m */; };
+		91674A1D163FD481006384DE /* HomeScreen_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A1C163FD481006384DE /* HomeScreen_iPhone.xib */; };
+		91674A1F163FD491006384DE /* HomeScreen_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A1E163FD491006384DE /* HomeScreen_iPad.xib */; };
+		91674A22163FD4A9006384DE /* FavoriteScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 91674A21163FD4A9006384DE /* FavoriteScreen.m */; };
+		91674A25163FD510006384DE /* BrowseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 91674A24163FD510006384DE /* BrowseMode.m */; };
+		91674A28163FD524006384DE /* HelpScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 91674A27163FD524006384DE /* HelpScreen.m */; };
+		91674A2A163FD547006384DE /* FavoriteScreen_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A29163FD547006384DE /* FavoriteScreen_iPhone.xib */; };
+		91674A2C163FD55A006384DE /* FavoriteScreen_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A2B163FD55A006384DE /* FavoriteScreen_iPad.xib */; };
+		91674A2E163FD577006384DE /* HelpScreen_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A2D163FD577006384DE /* HelpScreen_iPhone.xib */; };
+		91674A30163FD589006384DE /* HelpScreen_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A2F163FD589006384DE /* HelpScreen_iPad.xib */; };
+		91674A34163FE2E7006384DE /* HelpScreen_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A33163FE2E6006384DE /* HelpScreen_iPhone5.xib */; };
+		91674A36163FE704006384DE /* HomeScreen_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91674A35163FE704006384DE /* HomeScreen_iPhone5.xib */; };
+		91674A78163FED61006384DE /* BookMode_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91674A77163FED61006384DE /* BookMode_iPhone.storyboard */; };
+		91674A7A163FED85006384DE /* BookMode_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91674A79163FED85006384DE /* BookMode_iPad.storyboard */; };
+		917794DB16F2002E00DAAB94 /* BrowseMode_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917794DA16F2002E00DAAB94 /* BrowseMode_iPhone.xib */; };
+		917794DE16F2014C00DAAB94 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 917794DD16F2014C00DAAB94 /* Network.m */; };
+		917794E116F24A7200DAAB94 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 917794E016F24A7200DAAB94 /* Data.m */; };
+		91A9FCA91738C401005C2150 /* NavigationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9FCA81738C400005C2150 /* NavigationContainer.m */; };
+		91A9FCAC1738C4C2005C2150 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9FCAB1738C4C2005C2150 /* Book.m */; };
+		91A9FCAF1738C5BA005C2150 /* BookElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9FCAE1738C5B9005C2150 /* BookElement.m */; };
+		91A9FCB21738C61F005C2150 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A9FCB11738C61F005C2150 /* Article.m */; };
+		91AD5AF916FC9C6B009F19C6 /* BookViewMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD5AF716FC9C6B009F19C6 /* BookViewMaster.m */; };
+		91AD5AFA16FC9C6B009F19C6 /* BookViewMaster_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AD5AF816FC9C6B009F19C6 /* BookViewMaster_iPhone.xib */; };
+		91AD5AFC16FC9CD1009F19C6 /* BookViewMaster_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AD5AFB16FC9CD1009F19C6 /* BookViewMaster_iPad.xib */; };
+		91AD5AFE16FC9D28009F19C6 /* BookViewMaster_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AD5AFD16FC9D28009F19C6 /* BookViewMaster_iPhone5.xib */; };
+		91AD5B0216FC9DC8009F19C6 /* BookViewDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD5B0016FC9DC8009F19C6 /* BookViewDetail.m */; };
+		91AD5B0316FC9DC8009F19C6 /* BookViewDetail_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AD5B0116FC9DC8009F19C6 /* BookViewDetail_iPhone.xib */; };
+		91AD5B0516FC9E01009F19C6 /* BookViewDetail_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AD5B0416FC9E01009F19C6 /* BookViewDetail_iPhone5.xib */; };
+		91AD5B0716FC9E39009F19C6 /* BookViewDetail_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AD5B0616FC9E39009F19C6 /* BookViewDetail_iPad.xib */; };
 		91B318C716392EC60054B17F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B318C616392EC60054B17F /* UIKit.framework */; };
 		91B318C916392EC60054B17F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B318C816392EC60054B17F /* Foundation.framework */; };
 		91B318CB16392EC60054B17F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B318CA16392EC60054B17F /* CoreGraphics.framework */; };
@@ -24,10 +65,75 @@
 		91B318EE16392EC60054B17F /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B318EC16392EC60054B17F /* MasterViewController_iPad.xib */; };
 		91B318F116392EC60054B17F /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B318EF16392EC60054B17F /* DetailViewController_iPhone.xib */; };
 		91B318F416392EC60054B17F /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B318F216392EC60054B17F /* DetailViewController_iPad.xib */; };
-		91B318FC16392FC30054B17F /* FetchWebData.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B318FB16392FC30054B17F /* FetchWebData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		916749DA163965C0006384DE /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		916749DB163965C0006384DE /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		916749DC163965C0006384DE /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		916749DD163965C0006384DE /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		916749DE163965C0006384DE /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		916749DF163965C0006384DE /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		916749E0163965C0006384DE /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		916749E1163965C0006384DE /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		916749E2163965C0006384DE /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		916749E3163965C0006384DE /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		916749E4163965C0006384DE /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		916749E5163965C0006384DE /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		916749E6163965C0006384DE /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		916749E7163965C0006384DE /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		916749E8163965C0006384DE /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		916749E9163965C0006384DE /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		916749EA163965C0006384DE /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		916749EB163965C0006384DE /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		916749EC163965C0006384DE /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		916749ED163965C0006384DE /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		916749EE163965C0006384DE /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		916749EF163965C0006384DE /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		916749F0163965C0006384DE /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		916749F1163965C0006384DE /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		916749F2163965C0006384DE /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		91674A19163FD460006384DE /* HomeScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreen.h; sourceTree = "<group>"; };
+		91674A1A163FD460006384DE /* HomeScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreen.m; sourceTree = "<group>"; };
+		91674A1C163FD481006384DE /* HomeScreen_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreen_iPhone.xib; sourceTree = "<group>"; };
+		91674A1E163FD491006384DE /* HomeScreen_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreen_iPad.xib; sourceTree = "<group>"; };
+		91674A20163FD4A9006384DE /* FavoriteScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteScreen.h; sourceTree = "<group>"; };
+		91674A21163FD4A9006384DE /* FavoriteScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteScreen.m; sourceTree = "<group>"; };
+		91674A23163FD510006384DE /* BrowseMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseMode.h; sourceTree = "<group>"; };
+		91674A24163FD510006384DE /* BrowseMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseMode.m; sourceTree = "<group>"; };
+		91674A26163FD523006384DE /* HelpScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpScreen.h; sourceTree = "<group>"; };
+		91674A27163FD524006384DE /* HelpScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpScreen.m; sourceTree = "<group>"; };
+		91674A29163FD547006384DE /* FavoriteScreen_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteScreen_iPhone.xib; sourceTree = "<group>"; };
+		91674A2B163FD55A006384DE /* FavoriteScreen_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteScreen_iPad.xib; sourceTree = "<group>"; };
+		91674A2D163FD577006384DE /* HelpScreen_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpScreen_iPhone.xib; sourceTree = "<group>"; };
+		91674A2F163FD589006384DE /* HelpScreen_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpScreen_iPad.xib; sourceTree = "<group>"; };
+		91674A33163FE2E6006384DE /* HelpScreen_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpScreen_iPhone5.xib; sourceTree = "<group>"; };
+		91674A35163FE704006384DE /* HomeScreen_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreen_iPhone5.xib; sourceTree = "<group>"; };
+		91674A77163FED61006384DE /* BookMode_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookMode_iPhone.storyboard; sourceTree = "<group>"; };
+		91674A79163FED85006384DE /* BookMode_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookMode_iPad.storyboard; sourceTree = "<group>"; };
+		917794DA16F2002E00DAAB94 /* BrowseMode_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseMode_iPhone.xib; sourceTree = "<group>"; };
+		917794DC16F2014B00DAAB94 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		917794DD16F2014C00DAAB94 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		917794DF16F24A7100DAAB94 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		917794E016F24A7200DAAB94 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		91A9FCA71738C400005C2150 /* NavigationContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationContainer.h; sourceTree = "<group>"; };
+		91A9FCA81738C400005C2150 /* NavigationContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationContainer.m; sourceTree = "<group>"; };
+		91A9FCAA1738C4C1005C2150 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		91A9FCAB1738C4C2005C2150 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		91A9FCAD1738C5B9005C2150 /* BookElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookElement.h; sourceTree = "<group>"; };
+		91A9FCAE1738C5B9005C2150 /* BookElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookElement.m; sourceTree = "<group>"; };
+		91A9FCB01738C61F005C2150 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		91A9FCB11738C61F005C2150 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		91AD5AF616FC9C6B009F19C6 /* BookViewMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewMaster.h; sourceTree = "<group>"; };
+		91AD5AF716FC9C6B009F19C6 /* BookViewMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewMaster.m; sourceTree = "<group>"; };
+		91AD5AF816FC9C6B009F19C6 /* BookViewMaster_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewMaster_iPhone.xib; sourceTree = "<group>"; };
+		91AD5AFB16FC9CD1009F19C6 /* BookViewMaster_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewMaster_iPad.xib; sourceTree = "<group>"; };
+		91AD5AFD16FC9D28009F19C6 /* BookViewMaster_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewMaster_iPhone5.xib; sourceTree = "<group>"; };
+		91AD5AFF16FC9DC8009F19C6 /* BookViewDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewDetail.h; sourceTree = "<group>"; };
+		91AD5B0016FC9DC8009F19C6 /* BookViewDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewDetail.m; sourceTree = "<group>"; };
+		91AD5B0116FC9DC8009F19C6 /* BookViewDetail_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewDetail_iPhone.xib; sourceTree = "<group>"; };
+		91AD5B0416FC9E01009F19C6 /* BookViewDetail_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewDetail_iPhone5.xib; sourceTree = "<group>"; };
+		91AD5B0616FC9E39009F19C6 /* BookViewDetail_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewDetail_iPad.xib; sourceTree = "<group>"; };
 		91B318C216392EC60054B17F /* Lawesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B318C616392EC60054B17F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91B318C816392EC60054B17F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,8 +157,6 @@
 		91B318ED16392EC60054B17F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		91B318F016392EC60054B17F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		91B318F316392EC60054B17F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
-		91B318FA16392FC30054B17F /* FetchWebData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchWebData.h; sourceTree = "<group>"; };
-		91B318FB16392FC30054B17F /* FetchWebData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchWebData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +174,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		916749D8163965A8006384DE /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				916749DA163965C0006384DE /* NSObject+SBJson.h */,
+				916749DB163965C0006384DE /* NSObject+SBJson.m */,
+				916749DC163965C0006384DE /* SBJson.h */,
+				916749DD163965C0006384DE /* SBJsonParser.h */,
+				916749DE163965C0006384DE /* SBJsonParser.m */,
+				916749DF163965C0006384DE /* SBJsonStreamParser.h */,
+				916749E0163965C0006384DE /* SBJsonStreamParser.m */,
+				916749E1163965C0006384DE /* SBJsonStreamParserAccumulator.h */,
+				916749E2163965C0006384DE /* SBJsonStreamParserAccumulator.m */,
+				916749E3163965C0006384DE /* SBJsonStreamParserAdapter.h */,
+				916749E4163965C0006384DE /* SBJsonStreamParserAdapter.m */,
+				916749E5163965C0006384DE /* SBJsonStreamParserState.h */,
+				916749E6163965C0006384DE /* SBJsonStreamParserState.m */,
+				916749E7163965C0006384DE /* SBJsonStreamWriter.h */,
+				916749E8163965C0006384DE /* SBJsonStreamWriter.m */,
+				916749E9163965C0006384DE /* SBJsonStreamWriterAccumulator.h */,
+				916749EA163965C0006384DE /* SBJsonStreamWriterAccumulator.m */,
+				916749EB163965C0006384DE /* SBJsonStreamWriterState.h */,
+				916749EC163965C0006384DE /* SBJsonStreamWriterState.m */,
+				916749ED163965C0006384DE /* SBJsonTokeniser.h */,
+				916749EE163965C0006384DE /* SBJsonTokeniser.m */,
+				916749EF163965C0006384DE /* SBJsonUTF8Stream.h */,
+				916749F0163965C0006384DE /* SBJsonUTF8Stream.m */,
+				916749F1163965C0006384DE /* SBJsonWriter.h */,
+				916749F2163965C0006384DE /* SBJsonWriter.m */,
+			);
+			name = SBJSON;
+			sourceTree = "<group>";
+		};
 		91B318B716392EC60054B17F = {
 			isa = PBXGroup;
 			children = (
@@ -103,17 +239,57 @@
 			children = (
 				91B318D716392EC60054B17F /* AppDelegate.h */,
 				91B318D816392EC60054B17F /* AppDelegate.m */,
+				91674A19163FD460006384DE /* HomeScreen.h */,
+				91674A1A163FD460006384DE /* HomeScreen.m */,
+				91674A20163FD4A9006384DE /* FavoriteScreen.h */,
+				91674A21163FD4A9006384DE /* FavoriteScreen.m */,
+				91674A23163FD510006384DE /* BrowseMode.h */,
+				91674A24163FD510006384DE /* BrowseMode.m */,
+				91674A26163FD523006384DE /* HelpScreen.h */,
+				91674A27163FD524006384DE /* HelpScreen.m */,
 				91B318E316392EC60054B17F /* MasterViewController.h */,
 				91B318E416392EC60054B17F /* MasterViewController.m */,
 				91B318E616392EC60054B17F /* DetailViewController.h */,
 				91B318E716392EC60054B17F /* DetailViewController.m */,
+				91AD5AF616FC9C6B009F19C6 /* BookViewMaster.h */,
+				91AD5AF716FC9C6B009F19C6 /* BookViewMaster.m */,
+				91AD5AFF16FC9DC8009F19C6 /* BookViewDetail.h */,
+				91AD5B0016FC9DC8009F19C6 /* BookViewDetail.m */,
+				91AD5B0116FC9DC8009F19C6 /* BookViewDetail_iPhone.xib */,
+				91AD5B0416FC9E01009F19C6 /* BookViewDetail_iPhone5.xib */,
+				91AD5B0616FC9E39009F19C6 /* BookViewDetail_iPad.xib */,
+				91AD5AF816FC9C6B009F19C6 /* BookViewMaster_iPhone.xib */,
+				91AD5AFD16FC9D28009F19C6 /* BookViewMaster_iPhone5.xib */,
+				91AD5AFB16FC9CD1009F19C6 /* BookViewMaster_iPad.xib */,
+				917794DA16F2002E00DAAB94 /* BrowseMode_iPhone.xib */,
+				91674A1C163FD481006384DE /* HomeScreen_iPhone.xib */,
+				91674A35163FE704006384DE /* HomeScreen_iPhone5.xib */,
+				91674A1E163FD491006384DE /* HomeScreen_iPad.xib */,
+				91674A29163FD547006384DE /* FavoriteScreen_iPhone.xib */,
+				91674A2B163FD55A006384DE /* FavoriteScreen_iPad.xib */,
+				91674A2D163FD577006384DE /* HelpScreen_iPhone.xib */,
+				91674A33163FE2E6006384DE /* HelpScreen_iPhone5.xib */,
+				91674A2F163FD589006384DE /* HelpScreen_iPad.xib */,
 				91B318E916392EC60054B17F /* MasterViewController_iPhone.xib */,
 				91B318EC16392EC60054B17F /* MasterViewController_iPad.xib */,
 				91B318EF16392EC60054B17F /* DetailViewController_iPhone.xib */,
 				91B318F216392EC60054B17F /* DetailViewController_iPad.xib */,
 				91B318E016392EC60054B17F /* Lawesome.xcdatamodeld */,
-				91B318FA16392FC30054B17F /* FetchWebData.h */,
-				91B318FB16392FC30054B17F /* FetchWebData.m */,
+				91674A77163FED61006384DE /* BookMode_iPhone.storyboard */,
+				91674A79163FED85006384DE /* BookMode_iPad.storyboard */,
+				917794DC16F2014B00DAAB94 /* Network.h */,
+				917794DD16F2014C00DAAB94 /* Network.m */,
+				917794DF16F24A7100DAAB94 /* Data.h */,
+				917794E016F24A7200DAAB94 /* Data.m */,
+				91A9FCA71738C400005C2150 /* NavigationContainer.h */,
+				91A9FCA81738C400005C2150 /* NavigationContainer.m */,
+				91A9FCAA1738C4C1005C2150 /* Book.h */,
+				91A9FCAB1738C4C2005C2150 /* Book.m */,
+				91A9FCAD1738C5B9005C2150 /* BookElement.h */,
+				91A9FCAE1738C5B9005C2150 /* BookElement.m */,
+				91A9FCB01738C61F005C2150 /* Article.h */,
+				91A9FCB11738C61F005C2150 /* Article.m */,
+				916749D8163965A8006384DE /* SBJSON */,
 				91B318CF16392EC60054B17F /* Supporting Files */,
 			);
 			path = Lawesome;
@@ -192,6 +368,23 @@
 				91B318EE16392EC60054B17F /* MasterViewController_iPad.xib in Resources */,
 				91B318F116392EC60054B17F /* DetailViewController_iPhone.xib in Resources */,
 				91B318F416392EC60054B17F /* DetailViewController_iPad.xib in Resources */,
+				91674A1D163FD481006384DE /* HomeScreen_iPhone.xib in Resources */,
+				91674A1F163FD491006384DE /* HomeScreen_iPad.xib in Resources */,
+				91674A2A163FD547006384DE /* FavoriteScreen_iPhone.xib in Resources */,
+				91674A2C163FD55A006384DE /* FavoriteScreen_iPad.xib in Resources */,
+				91674A2E163FD577006384DE /* HelpScreen_iPhone.xib in Resources */,
+				91674A30163FD589006384DE /* HelpScreen_iPad.xib in Resources */,
+				91674A34163FE2E7006384DE /* HelpScreen_iPhone5.xib in Resources */,
+				91674A36163FE704006384DE /* HomeScreen_iPhone5.xib in Resources */,
+				91674A78163FED61006384DE /* BookMode_iPhone.storyboard in Resources */,
+				91674A7A163FED85006384DE /* BookMode_iPad.storyboard in Resources */,
+				917794DB16F2002E00DAAB94 /* BrowseMode_iPhone.xib in Resources */,
+				91AD5AFA16FC9C6B009F19C6 /* BookViewMaster_iPhone.xib in Resources */,
+				91AD5AFC16FC9CD1009F19C6 /* BookViewMaster_iPad.xib in Resources */,
+				91AD5AFE16FC9D28009F19C6 /* BookViewMaster_iPhone5.xib in Resources */,
+				91AD5B0316FC9DC8009F19C6 /* BookViewDetail_iPhone.xib in Resources */,
+				91AD5B0516FC9E01009F19C6 /* BookViewDetail_iPhone5.xib in Resources */,
+				91AD5B0716FC9E39009F19C6 /* BookViewDetail_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +400,30 @@
 				91B318E216392EC60054B17F /* Lawesome.xcdatamodeld in Sources */,
 				91B318E516392EC60054B17F /* MasterViewController.m in Sources */,
 				91B318E816392EC60054B17F /* DetailViewController.m in Sources */,
-				91B318FC16392FC30054B17F /* FetchWebData.m in Sources */,
+				916749F3163965C0006384DE /* NSObject+SBJson.m in Sources */,
+				916749F4163965C0006384DE /* SBJsonParser.m in Sources */,
+				916749F5163965C0006384DE /* SBJsonStreamParser.m in Sources */,
+				916749F6163965C0006384DE /* SBJsonStreamParserAccumulator.m in Sources */,
+				916749F7163965C0006384DE /* SBJsonStreamParserAdapter.m in Sources */,
+				916749F8163965C0006384DE /* SBJsonStreamParserState.m in Sources */,
+				916749F9163965C0006384DE /* SBJsonStreamWriter.m in Sources */,
+				916749FA163965C0006384DE /* SBJsonStreamWriterAccumulator.m in Sources */,
+				916749FB163965C0006384DE /* SBJsonStreamWriterState.m in Sources */,
+				916749FC163965C0006384DE /* SBJsonTokeniser.m in Sources */,
+				916749FD163965C0006384DE /* SBJsonUTF8Stream.m in Sources */,
+				916749FE163965C0006384DE /* SBJsonWriter.m in Sources */,
+				91674A1B163FD460006384DE /* HomeScreen.m in Sources */,
+				91674A22163FD4A9006384DE /* FavoriteScreen.m in Sources */,
+				91674A25163FD510006384DE /* BrowseMode.m in Sources */,
+				91674A28163FD524006384DE /* HelpScreen.m in Sources */,
+				917794DE16F2014C00DAAB94 /* Network.m in Sources */,
+				917794E116F24A7200DAAB94 /* Data.m in Sources */,
+				91AD5AF916FC9C6B009F19C6 /* BookViewMaster.m in Sources */,
+				91AD5B0216FC9DC8009F19C6 /* BookViewDetail.m in Sources */,
+				91A9FCA91738C401005C2150 /* NavigationContainer.m in Sources */,
+				91A9FCAC1738C4C2005C2150 /* Book.m in Sources */,
+				91A9FCAF1738C5BA005C2150 /* BookElement.m in Sources */,
+				91A9FCB21738C61F005C2150 /* Article.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lawesome/Lawesome-Prefix.pch";
 				INFOPLIST_FILE = "Lawesome/Lawesome-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -326,6 +543,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lawesome/Lawesome-Prefix.pch";
 				INFOPLIST_FILE = "Lawesome/Lawesome-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -350,6 +568,7 @@
 				91B318F916392EC60054B17F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

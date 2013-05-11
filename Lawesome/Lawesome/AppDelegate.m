@@ -12,6 +12,10 @@
 
 #import "DetailViewController.h"
 
+#import "HomeScreen.h"
+
+#import "Data.h"
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -23,11 +27,26 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil];
+        /*MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil];
         self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
         self.window.rootViewController = self.navigationController;
-        masterViewController.managedObjectContext = self.managedObjectContext;
+        masterViewController.managedObjectContext = self.managedObjectContext;*/
+        HomeScreen *homescreen;
+        if (IS_IPHONE_5) {
+            NSLog(@"Device is iphone 4 inch");
+            homescreen = [[HomeScreen alloc] initWithNibName:@"HomeScreen_iPhone5" bundle:nil];
+        } else {
+            NSLog(@"Device is iphone 3.5 inch");
+            homescreen = [[HomeScreen alloc] initWithNibName:@"HomeScreen_iPhone" bundle:nil];
+        }
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:homescreen];
+        
+        self.navigationController.toolbarHidden = YES;
+        self.window.rootViewController = self.navigationController;
+        [self.window setBackgroundColor:[UIColor whiteColor]];
+
     } else {
+        /*
         MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil];
         UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
         
@@ -42,7 +61,18 @@
         
         self.window.rootViewController = self.splitViewController;
         masterViewController.managedObjectContext = self.managedObjectContext;
+         */
+        HomeScreen *homescreen = [[HomeScreen alloc] initWithNibName:@"HomeScreen_iPad" bundle:nil];
+    
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:homescreen];
+    
+        self.navigationController.toolbarHidden = YES;
+        self.window.rootViewController = self.navigationController;
+        [self.window setBackgroundColor:[UIColor whiteColor]];
+    
     }
+    Data *data = [[Data alloc] init];
+    data.title = @"";
     [self.window makeKeyAndVisible];
     return YES;
 }

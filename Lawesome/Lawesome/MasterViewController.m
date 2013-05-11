@@ -10,6 +10,8 @@
 
 #import "DetailViewController.h"
 
+#import "SBJson.h"
+
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -37,6 +39,27 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+}
+
+-(void)loadNavigationContentFromURLString:(NSString*)urlString{
+    //parse json from website
+    NSString *url = @"http://2am-dev.ch/pkw/script.php?url=";
+    url = [url stringByAppendingString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *res, NSData *data, NSError *error){
+        
+        NSString *string = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+        SBJsonParser *parser = [[SBJsonParser alloc] init];
+        array = [parser objectWithString:string];
+        for (NSArray *a in array) {
+            [currentTexts addObject:[a objectAtIndex:0]];
+            [currentLinks addObject:[a objectAtIndex:1]];
+        }
+        NSLog(@"%@", [currentTexts description]);
+        NSLog(@"%@", [currentLinks description]);
+        [self.tableView reloadData];
+        lastUrl = url;
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,7 +98,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
-    return [sectionInfo numberOfObjects];
+    //return [sectionInfo numberOfObjects];
+    return [currentTexts count];
 }
 
 // Customize the appearance of table view cells.
@@ -91,7 +115,8 @@
         }
     }
 
-    [self configureCell:cell atIndexPath:indexPath];
+    //[self configureCell:cell atIndexPath:indexPath];
+    cell.textLabel.text = [currentTexts objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -125,7 +150,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    /*NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
 	        self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone" bundle:nil];
@@ -134,7 +159,15 @@
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     } else {
         self.detailViewController.detailItem = object;
-    }
+    }*/
+NSString *string = [NSMutableString stringWithString:lastUrl];
+NSRange start = [string rangeOfString:@"/" options:NSBackwardsSearch];
+NSRange end = [string rangeOfString:@".html" options:Nil];
+    int length = (end.location + end.length) - start.location;
+NSRange range = NSMakeRange(start.location+1, length-1);
+string = [string stringByReplacingCharactersInRange:range withString:@""];
+    
+    [self loadNavigationContentFromURLString:[string stringByAppendingString:[currentLinks objectAtIndex:indexPath.row]]];
 }
 
 #pragma mark - Fetched results controller

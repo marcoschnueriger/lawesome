@@ -13,6 +13,15 @@
 #import <CoreData/CoreData.h>
 
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+{
+    NSArray *array;
+    NSMutableArray *navigationSourceLinks;
+    NSMutableArray *currentLinks;
+    NSMutableArray *currentTexts;
+    int navigationlevel;
+    NSOperationQueue *webQueue;
+    NSString *lastUrl;
+}
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
